@@ -16,9 +16,9 @@ public class GetAverage {
 		int testScoreA;
 		int testScoreB;
 		int testScoreC;
-		String name1;
+		
 		System.out.print("Enter your name: ");
-		name1 = keyboard.next();
+		keyboard.next();
 		
 		System.out.print("Enter your first test score: ");
 		testScoreA = keyboard.nextInt();
@@ -26,11 +26,7 @@ public class GetAverage {
 		testScoreB = keyboard.nextInt();
 		System.out.print("Enter your third test score: ");
 		testScoreC = keyboard.nextInt();
-		/*System.out.print("Enter your fourth test score: ");
-		testScoreD = keyboard.nextInt();
-		System.out.print("Enter your fifth test score: ");
-		testScoreE = keyboard.nextInt();
-		*/keyboard.nextLine();
+		
 		double average = calcAverage(testScoreA,testScoreB, testScoreC);
 		System.out.println("The average is: " + average +'%');
 		determineGrade(average);
