@@ -1,5 +1,8 @@
-package week2lab2;
-import java.util.Scanner;
+package week3lab1;
+import java.util.Scanner; //will allow you to read from the screen
+
+//This Program will ask the user to enter a name and three scores.
+//It will display a letter grade for each set of three scores and the average the scores.
 
 public class AverageGrade {
 
