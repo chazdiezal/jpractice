@@ -1,5 +1,3 @@
-
-
 public class GradesArray {
 
 	public static void main(String[] args) {
