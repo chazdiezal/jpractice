@@ -10,7 +10,7 @@ public class GradesArray {
 		double[] score2Array = {50, 70, 60, 85, 90};
 		double[] score3Array = {70, 80, 90, 100, 100};
 		double[] averageArray = new double[5];
-	      for (int i = 0; i < 5; i++)  //why 4
+	      for (int i = 0; i < 5; i++)  //should be 5 for the # of names
 	      {
 	    	     averageArray[i] = (score1Array[i] + score2Array[i] + score3Array[i])/3;
 	    	     if (averageArray[i] > 90.0)
