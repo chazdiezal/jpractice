@@ -30,7 +30,7 @@ public class GradesArray {
 	    	{
 	    	gradeArray[i] = "F ";
 	    	}
-	    	System.out.print("Name is: " +  nameArray[i] + "Grade is: " + gradeArray[i] + "Average is: " + averageArray[i] );
+	    	System.out.println("Name is: " +  nameArray[i] + "Grade is: " + gradeArray[i] + "Average is: " +  averageArray[i] );
 	    	}
 
 	}
