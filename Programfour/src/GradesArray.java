@@ -1,4 +1,4 @@
-import java.util.*; 
+
 
 public class GradesArray {
 
@@ -32,7 +32,7 @@ public class GradesArray {
 	    	}
 	    	System.out.println("Name is: " +  nameArray[i] + "Grade is: " + gradeArray[i] + "Average is: " +  averageArray[i] );
 	    	}
-
+	      //end main method
 	}
 
 }
