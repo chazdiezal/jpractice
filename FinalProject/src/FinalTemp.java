@@ -34,6 +34,9 @@ public class FinalTemp {
 			//Verify string is greater than -999 and less than 999
 			if (userInput.length() > -999 && userInput.length() < 999)
 					continue;
+			else {
+				System.out.println("Please enter a valid temperature.");
+			}
 			
 			//Now let's split the input so we can perform error checking
 			typeTemp = userInput.substring(userInput.length()-1);
@@ -71,7 +74,7 @@ public class FinalTemp {
 		// TODO Auto-generated method stub
 		System.out.println("");
 		System.out.println("Please enter a numerical temperature.");
-		System.out.println("Enter C/c for celcius");
+		System.out.println("Enter F/f for fahrenheit");
 		return;
 	}
 	
