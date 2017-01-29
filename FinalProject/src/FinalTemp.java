@@ -70,11 +70,11 @@ public class FinalTemp {
 		float convTemp = 0;
 		typeTemp = typeTemp.toLowerCase();
 		
-		if (typeTemp.equals("c")) {
-			//convert to Fahrenheit
-			convTemp = 9 * valueTemp /5 + 32;
-			outConvert = " Celcius";
-			outType = " Fahrenheit ";
+		if (typeTemp.equals("f")) {
+			//convert to Celsius
+			convTemp = 5 * (valueTemp - 32)/9;
+			outConvert = " Fahrenheit";
+			outType = " Celsius ";
 		}
 		else {
 			System.out.println("Please specify C(celcius)");
@@ -91,7 +91,7 @@ public class FinalTemp {
 		// TODO Auto-generated method stub
 		System.out.println("");
 		System.out.println("Please enter a numerical temperature.");
-		System.out.println("Enter F/f for fahrenheit");
+		System.out.println("Enter F/f for Fahrenheit");
 		return;
 	}
 	
