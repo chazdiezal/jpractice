@@ -66,7 +66,24 @@ public class FinalTemp {
 	//Calculates and outputs the converted temp. ***Pickup coding here!***
 	private static void calculateOutput(String typeTemp, float valueTemp) {
 		// TODO Auto-generated method stub
+		String outConvert = "", outType = "";
+		float convTemp = 0;
+		typeTemp = typeTemp.toLowerCase();
 		
+		if (typeTemp.equals("c")) {
+			//convert to Fahrenheit
+			convTemp = 9 * valueTemp /5 + 32;
+			outConvert = " Celcius";
+			outType = " Fahrenheit ";
+		}
+		else {
+			System.out.println("Please specify C(celcius)");
+	
+	//Displays the output to screen
+			System.out.println("");
+			System.out.println(valueTemp + outConvert + "is" + convTemp + outType);
+			return;
+		}
 	}
 	
 	//Prints the welcome message
