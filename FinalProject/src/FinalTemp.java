@@ -63,7 +63,7 @@ public class FinalTemp {
 	
 	}
 	
-	//Calculates and outputs the converted temp. ***Pickup coding here!***
+	//Calculates and outputs the converted temp. 
 	private static void calculateOutput(String typeTemp, float valueTemp) {
 		// TODO Auto-generated method stub
 		String outConvert = "", outType = "";
