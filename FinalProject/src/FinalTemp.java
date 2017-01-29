@@ -35,7 +35,7 @@ public class FinalTemp {
 			if (userInput.length() > -999 && userInput.length() < 999)
 					continue;
 			else {
-				System.out.println("Please enter a valid temperature.");
+				System.out.println("Error: Please enter a value between -999 and 999.");
 			}
 			
 			//Now let's split the input so we can perform error checking
@@ -45,7 +45,7 @@ public class FinalTemp {
 				
 			}	catch (NumberFormatException nfe)	{
 					if ((!userInput.equals("quit")))
-						System.out.println("Please enter a temperature in numerical fashion.");
+						System.out.println("Thanks for using my program!");
 					continue;
 			}
 			
