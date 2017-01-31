@@ -1,36 +1,53 @@
 import java.util.Scanner;
 
 public class TempConversion {
-
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		//Let's setup some variables
 		int degreeValue;
 		String typeOfConversion;
 		double result;
 		String answer;
 		
+		//Gather user input
 		Scanner keyboard = new Scanner(System.in);
 		
+		
+		
+		//Start do-while loop
 		do
 		{
-			System.out.println("=========Temp Conversion=========");
-			System.out.println();
-			System.out.println("Please enter a whole number for");
-			System.out.println("conversion.  You will be asked");
-			System.out.println("perform in the next step:");
-			System.out.println();
+			
+				System.out.println("=========Temp Conversion=========");
+				System.out.println();
+				System.out.println("Please enter a value between -999 and 999 for");
+				System.out.println("conversion.  You will be asked");
+				System.out.println("what type of conversion you want to");
+				System.out.println("perform in the next step:");
+				System.out.println();
+				
+				degreeValue = keyboard.nextInt();
+				if (degreeValue >= -999 || degreeValue <= 999);
+				
 					
-					degreeValue = keyboard.nextInt();
-					
+				
+				
+		/**Calculations
+		*   C= 5.0 (degrees Fahrenheit) - 32.0 / 9.0
+		*   F= (9.0 (degrees Celsius) / 5.0) + 32.0
+		*/
+		
+		
 					boolean typeOfConversionInputIsInvalid = true;
 					while (typeOfConversionInputIsInvalid)
 					{
 						System.out.println();
 						System.out.println();
-						System.out.println("Please enter a value between -999 and 999");
 						System.out.println("Please enter either \"C\" or \"c\" for a");
 						System.out.println("Celsius-Fahrenheit conversion, or \"F\" or \"f\"");
-						System.out.println("for a Fahrenheit-Celcius conversion:");
+						System.out.println("for a Fahrenheit-Celsius conversion:");
 							System.out.println();
 							
 							typeOfConversion = keyboard.next();
@@ -70,12 +87,47 @@ public class TempConversion {
 				answer = keyboard.next();
 				
 				
-		}while (answer.equalsIgnoreCase("yes"));
-					
-				
-							
-					
-		}
-	}
+		} while (answer.equalsIgnoreCase("yes"));
+		
+			keyboard.close();
+		}			
+		
+}	
+	
 
+	
+	
+		
+		
+		
+		
+		
+							
+	
+		/**
+		 * if (degreeValue > -999 && degreeValue < 999) {
+						continue;
+					} else {
+						System.out.println("Please enter a valid number");
+						return;
+					}
+					
+			catch (degreeValue >= -999 && degreeValue <= 999){
+					System.out.println("Thank you.  Your input has been accepted. ");
+				}
+				catch (degreeValue < -999 || degreeValue >999) {
+					throw new NumberFormatException("Input is out of valid range.");
+				}
+			
+			finally {
+				    if (answer != null) { 
+				        System.out.println("Closing PrintWriter");
+				        keyboard.close(); 
+				    } else { 
+				        System.out.println("PrintWriter not open");
+				    }		
+		 */
+		
+	
+			
 
