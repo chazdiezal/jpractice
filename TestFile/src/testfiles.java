@@ -4,14 +4,14 @@ public class testfiles {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-// The name of the file to open.
-	String fileName = "S:\\charles\\School\\Inf231\\week5\\week5file.txt";
+		// The name of the file to open.
+		String fileName = "S:\\charles\\School\\Inf231\\week5\\week5file.txt";
 	
-// This will reference one line at a time
+		// This will reference one line at a time
 		String line = null;
 		
 		
-//below is the error handling if the file does not exist
+		//below is the error handling if the file does not exist
 		try {
 			System.out.println("Charles");
 			FileReader filereader = new FileReader(fileName);
@@ -20,12 +20,12 @@ public class testfiles {
 			System.out.println(line);
 		}
 		bufferedReader.close();  //closing file after processing
-		
+		filereader.close();
 		}
 		
 		//error if the file does not exist
 		catch(FileNotFoundException ex) {
-			System.out.println("Unable to open file '");
+			System.out.println("Unable to open file ");
 		}
 		catch(IOException ex) {
 			System.out.println( "Error reading file ");
